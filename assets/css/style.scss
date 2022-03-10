@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800;900&display=swap');
+$blackColor: #000;
+$grayColor:#f5f5f5;
+
+header.site-header {
+    padding: 28px 0;
+}
+.slider-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $grayColor;
+}
+
+@media (min-width: 1200px){
+.container {
+    max-width: 1170px;
+}
+}
