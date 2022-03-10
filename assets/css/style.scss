@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 $blackColor: #000;
 $grayColor:#f5f5f5;
+$primaryColor:#303233;
+$secondryColor:#7a7a7a;
+$Raleway: 'Raleway';
+$Kaushan: 'Kaushan Script';
 
 header.site-header {
     padding: 28px 0;
 }
+ 
 .slider-content {
     height: 100%;
     display: flex;
@@ -12,7 +18,20 @@ header.site-header {
     justify-content: center;
     background-color: $grayColor;
 }
-
+.slider-content {
+    h2{
+        font-size: 54px;
+        line-height: 80px;
+        font-family: $Raleway;
+        font-weight: 800;
+    }
+    h1{
+        color: $primaryColor;
+        font-size: $secondryColor;
+        font-family: $Kaushan;
+        font-weight: 400;
+    }
+}
 @media (min-width: 1200px){
 .container {
     max-width: 1170px;
