@@ -1,35 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato&family=Montserrat:wght@700&display=swap');
 $blackColor: #000;
 $grayColor:#f5f5f5;
 $primaryColor:#303233;
 $secondryColor:#7a7a7a;
 $Raleway: 'Raleway';
 $Kaushan: 'Kaushan Script';
-
+$Montserrat: 'Montserrat';
+$Lato:'Lato';
 header.site-header {
     padding: 28px 0;
 }
- 
+ .slider-section{
+     div{
+        background-color: $grayColor;
+     }
+ }
 .slider-content {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: $grayColor;
+    max-width: 570px;
+    margin-right: 0;
+    margin-left: auto;
+    justify-content: flex-start;
 }
 .slider-content {
     h2{
         font-size: 54px;
-        line-height: 80px;
+        line-height: 64px;
         font-family: $Raleway;
         font-weight: 800;
+            text-shadow: 0px 0px 4px #000000;
+    color: #fff;
     }
     h1{
         color: $primaryColor;
-        font-size: $secondryColor;
+        font-size: 18px;
         font-family: $Kaushan;
         font-weight: 400;
+        margin-bottom: 0;
+    }
+}
+article {
+    margin-top: 131px;
+}
+.text-vertical {
+    display: inline-block;
+    transform: rotate(270deg) translateX(-79px);
+    background-color:#003333;
+    color: #fff;
+    font-family: $Montserrat;
+    font-weight: 700;
+    padding: 18px 28px;
+}
+.entry-header {
+    margin-bottom: 32px;
+}
+.project-details{
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+        font-family: $Raleway;
+        font-weight: 800;
+        color: $primaryColor;
+        margin-bottom: 24px;
+    }
+    p{
+        color: $secondryColor;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $Lato;
+        font-weight: 400;
+    }
+}
+.social-info {
+    display: flex;
+    align-items: center;
+}
+.social-info {
+    h3{
+        color: $primaryColor;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: $Raleway;
+        font-weight: 800;
+        margin-right: 20px;
+        margin-bottom: 0;
     }
 }
 @media (min-width: 1200px){
