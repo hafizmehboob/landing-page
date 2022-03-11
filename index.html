@@ -14,13 +14,13 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-       
+        <link rel='stylesheet' id='magnific-theme-css'  href='assets/css/magnific.css?ver=20151215' type='text/css' media='all' />
         <link rel="stylesheet" href="assets/css/style.css" />
        
         <title>Landing Page</title>
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid header-wrap">
             <div class="container">
                 <header class="site-header">
                     <section class="header-top">
@@ -31,9 +31,26 @@
                                 </a>
                             </div>
                             <div class="col-sm-6">
-                                <a href="index.html" title="Logo" target="_self">  
-                                    <img src="" width="width" height="height" class="img-fluid" alt="Logo" />
-                                </a>
+                                <nav id="primary-menu">
+                                     
+                                    <div id="accordion">
+                                        <div class="card">
+                                          <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                                <div class="bars"></div><div class="bars bar-two"></div><div class="bars bar-three"></div>
+                                          </div>
+                                          <div id="collapseOne" class="collapse" data-parent="#accordion" style="">
+                                            <div class="card-body">
+                                                <a href="#" title="About Us">About Us</a>
+                                                <a href="#" title="Contact Us">Contact Us</a>
+                                                <a href="#" title="Blogs">Blogs</a>
+                                             </div>
+                                          </div>
+                                        </div>
+                                        
+                                        
+                                      </div>
+                                  </nav>
                             </div>
                         </div> 
                     </section>
@@ -78,17 +95,17 @@
                                     <h3>Share:</h3>
                                     <ul class="list-inline mb-0 social-link-list">
                                         <li class="list-inline-item">
-                                            <a href="facebook.com" title="Facebook" target="_blank">
+                                            <a href="https://www.facebook.com/" title="Facebook" target="_blank">
                                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="twitter.com" title="Twitter" target="_blank">
+                                            <a href="https://www.twitter.com" title="Twitter" target="_blank">
                                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="google.com" title="Google Plus" target="_blank">
+                                            <a href="https://www.google.com" title="Google Plus" target="_blank">
                                                 <i class="fa fa-google-plus" aria-hidden="true"></i>
                                             </a>
                                         </li>
@@ -223,17 +240,23 @@
                             <div class="section-title">
                                 <h2>Our Gallery</h2>
                             </div>
-                            <div class="our-gallery">
+                            <div class="our-gallery popup-gallery">
                                 <div class="gallery-column-one">
-                                    <img src="assets/images/blog-placeholder.jpg"  class="img-fluid" alt="Project" />
+                                    <a href="assets/images/ballon.jpg" title="Gallery">
+                                    <img src="assets/images/ballon.jpg"  class="img-fluid" alt="Project" />
+                                </a>
                                 </div>
                                 <div class="gallery-column-two">
                                     <div>
-                                        <img src="assets/images/blog-placeholder.jpg"  class="img-fluid" alt="Project" />
+                                        <a href="assets/images/ballon.jpg" title="Gallery">
+                                        <img src="assets/images/ballon.jpg"  class="img-fluid" alt="Project" />
+                                    </a>
                                     </div>
-                                    <div class="d-flex">
-                                        <img src="assets/images/blog-placeholder.jpg"  class="img-fluid" alt="Project" />
-                                        <img src="assets/images/blog-placeholder.jpg"  class="img-fluid" alt="Project" />
+                                    <div class="d-flex justify-content-between">
+                                        <a href="assets/images/ballon.jpg" title="Gallery">
+                                        <img src="assets/images/ballon.jpg"  class="img-fluid" alt="Project" /> </a>
+                                        <a href="assets/images/ballon.jpg" title="Gallery">
+                                        <img src="assets/images/ballon.jpg"  class="img-fluid" alt="Project" /> </a>
                                     </div>
                                 </div>
                             </div>
@@ -249,9 +272,11 @@
         <!-- Optional JavaScript; choose one of the two! -->
 
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script type='text/javascript' src='assets/js/magnific.js?ver=1.0' id='magnific-js-js'></script>
+        <script type='text/javascript' src='assets/js/site.js?ver=1.0' id='magnific-js-js'></script>
         <!-- Option 2: Separate Popper and Bootstrap JS -->
         <!--
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
